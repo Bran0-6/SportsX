@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noticias Deportivas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Noticias Deportivas</h1>
+    <nav>
+      <ul>
+        <li><a href="#futbol">Fútbol</a></li>
+        <li><a href="#baloncesto">Baloncesto</a></li>
+        <li><a href="#tenis">Tenis</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+        <section id="futbol" class="categoria">
+          <h2>Fútbol</h2>
+          <div class="contenido">
+            <img src="https://static.nike.com/a/images/t_default/7eb3092c-700a-47ce-a487-70f215bb1f9d/PL+NK+ACADEMY+-+FA24.png" alt="Balón de fútbol" class="img-noticia">
+            <p>¡El equipo local ganó ayer en un partido épico!</p>
+            <ul class="detalle">
+              <li><strong>Marcador:</strong> 3 - 2</li>
+              <li><strong>Goleador:</strong> Juan Pérez</li>
+            </ul>
+            <button class="btn-noticia" data-deporte="Fútbol">Leer más</button>
+          </div>
+        </section>
+      
+        <section id="baloncesto" class="categoria">
+          <h2>Baloncesto</h2>
+          <div class="contenido">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Basketball.png" alt="Baloncesto" class="img-noticia">
+            <p>El equipo campeón se enfrentó al equipo sorpresa en una semifinal inolvidable.</p>
+            <ul class="detalle">
+              <li><strong>Resultado:</strong> 88 - 84</li>
+              <li><strong>MVP:</strong> Carlos Gómez</li>
+            </ul>
+            <button class="btn-noticia" data-deporte="Baloncesto">Leer más</button>
+          </div>
+        </section>
+      
+        <section id="tenis" class="categoria">
+          <h2>Tenis</h2>
+          <div class="contenido">
+            <img src="https://wilsonstore.com.co/wp-content/uploads/2024/09/659ffd2680ef0e0c4e620a76_thumbnail.png" alt="Tenis" class="img-noticia">
+            <p>El número uno del mundo sigue imbatible en su camino al título.</p>
+            <ul class="detalle">
+              <li><strong>Partido:</strong> 6-4, 6-3</li>
+              <li><strong>Jugador:</strong> Rafael Nadal</li>
+            </ul>
+            <button class="btn-noticia" data-deporte="Tenis">Leer más</button>
+          </div>
+        </section>
+      
+        <!-- Modal -->
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-body">Aquí aparecerá más información sobre el deporte seleccionado.</p>
+          </div>
+        </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Noticias Deportivas. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
